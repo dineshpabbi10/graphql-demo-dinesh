@@ -1,4 +1,5 @@
 # **Demo Graphql**
+_A simple app to demonstrate database querying using graphql server implementation in java_
 
 * URL : [Graphql Playground URL][Link]
 * REST API endpoint : [/getproducts][REST-Link]
