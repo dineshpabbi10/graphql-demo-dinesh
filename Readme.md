@@ -23,6 +23,34 @@
 </dependency>
 ```
 
+### Graphql Queries
+1. findAllProducts: List all products and their corresponding comments in database
+```graphql
+{
+  findAllProducts{
+    id
+    name
+    comments {
+      id
+      commentDescription
+    }
+  }
+}
+```
+2. findAllProductsByIds: Find products by ids and select specific fields
+
+```graphql
+{
+  findAllProductsByIds(ids:[1,2]){
+    id
+    name
+    comments {
+      id
+      commentDescription
+    }
+  }
+}
+```
 
 [Link]: https://graphql-demo-0109.herokuapp.com/graphiql?query=%7B%0A%20%20findAllProducts%7B%0A%20%20%20%20id%0A%20%20%20%20name%0A%20%20%20%20comments%7B%0A%20%20%20%20%20%20id%0A%20%20%20%20%20%20commentDescription%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D
 

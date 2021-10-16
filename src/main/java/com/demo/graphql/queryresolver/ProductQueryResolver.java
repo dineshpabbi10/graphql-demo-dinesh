@@ -17,4 +17,8 @@ public class ProductQueryResolver implements GraphQLQueryResolver {
     public List<ProductView> findAllProducts(){
         return productService.findAllProducts();
     }
+
+    public List<ProductView> findAllProductsByIds(List<Integer> ids){
+        return productService.findAllProductsByIds(ids);
+    }
 }

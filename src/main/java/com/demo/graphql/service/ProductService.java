@@ -20,4 +20,13 @@ public class ProductService {
                 .map(Product::toView)
                 .collect(Collectors.toList());
     }
+
+    public List<ProductView> findAllProductsByIds(List<Integer> ids){
+        return productRepository.findByProductIdIn(ids)
+                .stream()
+                .map(Product::toView)
+                .collect(Collectors.toList());
+    }
+
+
 }

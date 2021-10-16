@@ -19,7 +19,7 @@ public class Product {
     @NonNull
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Integer productId;
 
     @NonNull
     @Column(name = "name")
@@ -30,7 +30,7 @@ public class Product {
 
     public ProductView toView(){
         return ProductView.builder()
-                .id(this.getId())
+                .id(this.getProductId())
                 .name(this.getName())
                 .comments(
                         this.getCommentsList()

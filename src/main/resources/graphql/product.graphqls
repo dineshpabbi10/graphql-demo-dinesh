@@ -11,4 +11,5 @@ type CommentView{
 
 type Query{
     findAllProducts:[ProductView]
+    findAllProductsByIds(ids:[Int]):[ProductView]
 }
