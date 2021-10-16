@@ -1,0 +1,14 @@
+type ProductView{
+    id:Int
+    name:String
+    comments:[CommentView]
+}
+
+type CommentView{
+    id:Int
+    commentDescription:String
+}
+
+type Query{
+    findAllProducts:[ProductView]
+}
