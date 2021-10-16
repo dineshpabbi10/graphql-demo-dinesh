@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+// Demo controller to show rest endpoint for same data
 @RestController
 public class ProductController {
     @Autowired
