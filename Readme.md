@@ -52,6 +52,6 @@
 }
 ```
 
-[Link]: https://graphql-demo-0109.herokuapp.com/graphiql?query=%7B%0A%20%20findAllProducts%7B%0A%20%20%20%20id%0A%20%20%20%20name%0A%20%20%20%20comments%7B%0A%20%20%20%20%20%20id%0A%20%20%20%20%20%20commentDescription%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D
+[Link]: https://graphql-demo-dinesh.herokuapp.com/graphiql?query=%23%20%7B%0A%23%20%20%20findAllProducts%7B%0A%23%20%20%20%20%20id%0A%23%20%20%20%20%20name%0A%23%20%20%20%20%20comments%20%7B%0A%23%20%20%20%20%20%20%20id%0A%23%20%20%20%20%20%20%20commentDescription%0A%23%20%20%20%20%20%7D%0A%23%20%20%20%7D%0A%23%20%7D%0A%0A%7B%0A%20%20findAllProductsByIds(ids%3A%5B1%5D)%7B%0A%20%20%20%20id%0A%20%20%20%20name%0A%20%20%20%20comments%20%7B%0A%20%20%20%20%20%20id%0A%20%20%20%20%20%20commentDescription%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D
 
-[REST-Link]:https://graphql-demo-0109.herokuapp.com/getproducts
+[REST-Link]:https://graphql-demo-dinesh.herokuapp.com/getproducts
